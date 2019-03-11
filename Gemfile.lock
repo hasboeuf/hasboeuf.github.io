@@ -100,6 +100,8 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
+    jekyll-archives (2.1.1)
+      jekyll (>= 2.4)
     jekyll-avatar (0.6.0)
       jekyll (~> 3.0)
     jekyll-coffeescript (1.1.1)
@@ -236,14 +238,17 @@ GEM
       ethon (>= 0.9.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    unicode-display_width (1.4.1)
+    unicode-display_width (1.5.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   github-pages
+  jekyll-archives
   jekyll-feed (~> 0.6)
+  jekyll-paginate
+  jekyll-sitemap
   minima (~> 2.0)
   tzinfo-data
 
