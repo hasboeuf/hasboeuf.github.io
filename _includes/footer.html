@@ -10,7 +10,7 @@
       <ul class="pages">
         {% for page in site.pages %}
         {% if page.title and page.main_nav != false %}
-        {% unless site.exclude_navigation contains page.title %} 
+        {% unless site.exclude_navigation contains page.title %}
           <li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
         {% endunless %}
         {% endif %}

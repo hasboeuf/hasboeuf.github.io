@@ -1,0 +1,19 @@
+---
+layout: page
+title: "Archive"
+permalink: /archive/
+---
+
+{% for post in site.posts %}
+{% assign currentDate = post.date | date: "%Y" %}
+{% if currentDate != myDate %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h1>{{ currentDate }}</h1>
+    <ul class="posts-list">
+    {% assign myDate = currentDate %}
+{% endif %}
+<li><a href="{{ post.url }}"><span><strong>{{ post.date | date: "%B %-d, %Y" }}</strong></span> - {{ post.title }}</a></li>
+{% if forloop.last %}</ul>{% endif %}
+{% endfor %}
+
+<br>
