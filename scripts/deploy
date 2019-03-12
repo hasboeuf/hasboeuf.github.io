@@ -1,0 +1,6 @@
+#!/bin/bash
+
+PARDIR=$(dirname "$0")/..
+cd $PARDIR
+bundle exec jekyll build
+cp --recursive --force _site/category .
