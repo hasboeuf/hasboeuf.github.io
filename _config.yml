@@ -29,6 +29,7 @@ paginate: 5
 paginate_path: "/page:num/"
 inter_post_navigation: false
 highlightjs_theme: "monokai-sublime"
+future: true
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives:
@@ -48,10 +49,14 @@ disqus_shortname: adriengavignet
 ga_tracking_id: "UA-135994160-1"
 
 # Category descriptions (for archive pages)
-exclude_navigation: blog # In order to not show categories page in header and site map
+exclude_navigation: blog iot arduino # In order to not show categories page in header and site map
 descriptions:
   - cat: blog
     desc: "Content about this blog"
+  - cat: iot
+    desc: "Content about iot"
+  - cat: arduino
+    desc: "Content about Arduino"
 
 # Social icons and sharing options
 #
